@@ -11,10 +11,9 @@ const Image = dynamic(() => import('next/image'), { ssr: false });
 export default function CartPage() {
     const dispatch = useDispatch();
     const { items, totalAmount } = useSelector((state: RootState) => state.cart);
-
     if (items.length === 0) {
         return (
-            <div className="container mx-auto p-4 text-center">
+            <div className="container mx-auto p-4 text-center mt-20">
                 <h2 className="text-2xl font-bold mb-4">Your cart is empty</h2>
             </div>
         );
