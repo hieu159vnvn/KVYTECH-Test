@@ -17,7 +17,7 @@ export default async function Home() {
   const products = await getProducts();
   const categories = await getCategories();
   return (
-    <section className="container m-auto">
+    <section className="container m-auto mt-[76px]">
       {/* <ul className="grid grid-flow-row gap-4 grid-cols-1 sm:grid-cols-3 lg:grid-cols-4">
         {products.map((product: ProductType) => (
           <Product key={product.id} {...product} />

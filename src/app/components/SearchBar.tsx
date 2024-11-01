@@ -10,10 +10,10 @@ export default function SearchBar() {
 
   return (
 
-    <div className="hidden justify-center md:flex md:w-1/3">
+    <div className="justify-center flex">
     <div className="w-max-[550px] relative w-full lg:w-80 xl:w-full" >
         <input placeholder="Search for products..." autoComplete="off" 
-        className="text-md w-full rounded-lg border bg-white px-4 py-2 text-black placeholder:text-neutral-500 md:text-sm dark:border-neutral-800 dark:bg-transparent dark:text-white dark:placeholder:text-neutral-400" 
+        className="text-md w-full rounded-lg border px-4 py-2 md:text-sm border-neutral-800 bg-transparent text-white placeholder:text-neutral-400" 
         type="text"  value={search}
         onChange={(e) => dispatch(updateFilters({ search: e.target.value }))}/>
         <div className="absolute right-0 top-0 mr-3 flex h-full items-center">

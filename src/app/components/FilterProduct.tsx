@@ -19,7 +19,7 @@ export default function Filter({ categories }: FilterProps) {
     <div className="md:p-4 space-y-4 rounded-lg shadow">
       {/* Category Filter */}
       <div>
-        <h3 className="text-xs text-neutral-500 dark:text-neutral-400 mb-2">Category</h3>
+        <h3 className="text-xs text-neutral-500 mb-2">Category</h3>
         <select
           className="w-full p-2 rounded-md bg-neutral-800 text-neutral-300 text-sm capitalize"
           value={filters.category}
@@ -38,7 +38,7 @@ export default function Filter({ categories }: FilterProps) {
 
       {/* Price Range Filter */}
       <div>
-        <h3 className="text-xs text-neutral-500 dark:text-neutral-400 mb-2">Price Range</h3>
+        <h3 className="text-xs text-neutral-400 mb-2">Price Range</h3>
         <div className="flex gap-2">
           <input
             type="number"
@@ -67,7 +67,7 @@ export default function Filter({ categories }: FilterProps) {
 
       {/* Rating Filter */}
       <div>
-        <h3 className="text-xs text-neutral-500 dark:text-neutral-400 mb-2">Minimum Rating</h3>
+        <h3 className="text-xs text-neutral-400 mb-2">Minimum Rating</h3>
         <div className="flex gap-1">
           {[1, 2, 3, 4, 5].map((star) => (
             <button
@@ -88,7 +88,7 @@ export default function Filter({ categories }: FilterProps) {
           ))}
         </div>
       </div>
-      <h3 className="text-xs text-neutral-500 dark:text-neutral-400 mb-2">Sorting</h3>
+      <h3 className="text-xs text-neutral-400 mb-2">Sorting</h3>
 
       <select
         value={sortBy}
