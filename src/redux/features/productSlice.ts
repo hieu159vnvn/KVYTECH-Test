@@ -8,7 +8,7 @@ interface ProductState {
         category: string;
         priceRange: { min: number; max: number };
         rating: number;
-        search: ''
+        search: string
     };
     sortBy: SortOption | '';
     currentPage: number;
